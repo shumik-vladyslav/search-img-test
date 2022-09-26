@@ -1,0 +1,28 @@
+button {
+    color: rgb(251, 186, 87);
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    cursor: pointer;
+    min-width: 30px;
+    padding: 5px 10px;
+    &:hover {
+        opacity: .7;
+        transition: all 200ms ease-in-out;
+    }
+}
+button[disabled]{
+    opacity: .4;
+    pointer-events: none;
+}
+.first-pagination-btn {
+    border-radius: 4px 0 0 4px;
+}
+.last-pagination-btn {
+    border-radius: 0 4px 4px 0;
+}
+.active-btn {
+    color: #fff;
+    background: rgb(251, 186, 87);
+    border-color: rgb(251, 186, 87);
+}

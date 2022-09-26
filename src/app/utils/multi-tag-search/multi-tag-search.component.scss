@@ -1,0 +1,58 @@
+.multi-tag-wrapp {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    border-right: none;
+    .chips-wrap{
+        display: flex;
+        .chip{
+            background-color: rgb(251, 186, 87);
+            color: #fff;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin: 0 2px 1px 0;
+            &:hover {
+                opacity: .7;
+                transition: all 200ms ease-in-out;
+            }
+            button{
+                border: none;
+                padding: 0;
+                background: transparent;
+                outline: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 3px;
+            }
+        }
+    }
+    input {
+        padding: 3px 5px;
+        height: 20px;
+        border: none;
+        outline: none;
+    }
+    button {
+        padding: 5px;
+    }
+}
+
+.multi-tag-btn-search{
+    border: 1px solid #999;
+    background: rgb(251, 186, 87);
+    outline: none;
+    padding-top: 5px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+        transition:all 200ms ease-in-out;
+    }
+}

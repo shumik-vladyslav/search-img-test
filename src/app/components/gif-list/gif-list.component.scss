@@ -1,0 +1,26 @@
+  .gif-wrapp {
+    padding: 5px;  
+  }
+  .gif-item {
+    width: 100%;
+    max-height: 100%;
+  }
+  .gifs-container {
+    height: calc(100vh - 115px);
+    padding: 8px 20px;
+    overflow: hidden;
+    max-width: 55vw;
+  }
+  .calc-item-height {
+    height: calc((100vh - 135px)/3);
+  }
+  .search-wrap {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd8d8;  
+    background: #f5f5f5;
+  }
+  .paginator-wrapp {
+    border-top: 1px solid #ddd8d8;  
+    padding: 6px;
+    background: #f5f5f5;
+  }

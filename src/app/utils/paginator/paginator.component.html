@@ -1,0 +1,9 @@
+<div class="d-flex">
+    <button class="first-pagination-btn" [disabled]="currentPage === 0" (click)="selectPage(0)">First</button>
+    <button [disabled]="currentPage === 0" (click)="selectPage(currentPage - 1)">Previous</button>
+    <div *ngFor="let page of pageArr; let i = index">
+        <button [ngClass]="{'active-btn': this.currentPageFromRange === i}" (click)="selectPage(page)">{{page + 1}}</button>
+    </div>
+    <button [disabled]="currentPage === pageCount - 1" (click)="selectPage(currentPage + 1)">Next</button>
+    <button class="last-pagination-btn" [disabled]="currentPage === pageCount - 1" (click)="selectPage(pageCount - 1)">Last</button>
+</div>

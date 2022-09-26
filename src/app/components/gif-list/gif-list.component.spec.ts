@@ -59,12 +59,4 @@ describe('GifListComponent', () => {
     
     expect(component.gifList.length).toEqual(service.gifCountOnPage);
   });
-
-  it('should get trend gifs if search array is empty', () => {
-    
-    spyOn(service, 'getGiphyList').and.returnValue(of(MockTrendData));
-    component.searchGifs([], 0);
-    
-    expect(component.gifList.length).toEqual(service.gifCountOnPage);
-  });
 });

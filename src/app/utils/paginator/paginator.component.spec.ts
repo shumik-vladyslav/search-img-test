@@ -34,11 +34,6 @@ describe('PaginatorComponent', () => {
     component.updateVisiblePages()
     expect(component.currentPage).toEqual(0);
   });
-  it('should check number of page in pagination', () => {
-    component.selectPage(0);
-    component.updateVisiblePages()
-    expect(component.currentPage).toEqual(0);
-  });
 
   it('should check the bigger number of page in pagination', () => {
     component.selectPage(110);
